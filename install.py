@@ -66,9 +66,9 @@ def install():
 
 
 try:
-    import launch
+    import neko
 
-    skip_install = launch.args.skip_install
+    skip_install = neko.args.skip_install
 except Exception:
     skip_install = False
 
