@@ -99,10 +99,10 @@ def library_version():
 
 def sys_info() -> dict[str, Any]:
     try:
-        import launch
+        import neko
 
-        version = launch.git_tag()
-        commit = launch.commit_hash()
+        version = neko.git_tag()
+        commit = neko.commit_hash()
     except Exception:
         version = "Unknown (too old or vladmandic)"
         commit = "Unknown"
